@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Fill The Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+</head>
+
+<header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">Covid Predictor</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="/">Home</a></li>
+          <li><a class="nav-link scrollto active" href="/survey">Covid Predictor</a></li>
+
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Covid Predictor</span></h2>
+
+          <p class="animate__animated fanimate__adeInUp">This predictor tool uses advanced Machine Learning Tools and Data Science algorithms to predict
+            your vulnerability to coronavirus. This Toolkit is designed and developed by the AI-ML Club of GDSC - GGV.</p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+
+
+    </div>
+
+     <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+       viewBox="0 24 150 28 " preserveAspectRatio="none">
+         <defs>
+         <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+         </defs>
+       <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,69,0 )">
+       </g>
+       <g class="wave2">
+         <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,165,0 )">
+       </g>
+       <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="rgba(255,215,0 )">
+       </g>
+     </svg>
+    </section>
+    <section class="formpage">
+      <main class="mb-4"  style="background-color:orange">
+        <div class="container px-4 px-lg-5" style="background-color: #fff ">
+             <div class="row  gx-lg-5 justify-content-center">
+               <div class="formdesign">
+                <div class="container">
+                  <h2>Fill The Details</h2>
+                  <p>Your Details are Needed because this predictor tool uses advanced Machine Learning Tools and Data Science algorithms to predict your vulnerability to coronavirus.</p>
+                </div>
+              </div>
+                 <div class="col-md-10 col-lg-8 col-xl-7" >
+                     <div class="my-5" >
+                       <form action="/survey" method="POST">
+       
+                         <p> 1. What is your Name ?</p>
+                         <div class="form-floating">
+                           <input class="form-control" id="inputName" type="text" placeholder="Enter your Name..." name= "name" />
+                           <!-- <label for="inputName">Name</label> -->
+                         </div>
+                         <br />
+                     
+                     
+                        
+                     
+                         
+                           <p> 2. Do you suffer from any kind of breathing issues ?</p>
+                           <div class="c">
+                             <div class="form-check">
+                                             <input class="form-check-input" type="radio" style="border-radius:20px"  value="1" name="q2"  >
+                                             <label> Yes </label>
+                                         </div>
+                                         <div class="form-check">
+                                             <input class="form-check-input" type="radio" style="border-radius:20px"  value="0" name="q2" >
+                                             <label>No</label>
+                                         </div>
+                             </div>
+                     
+                           <br>
+                           <p> 3. Are you suffering from  cold , dry cough?</p>
+                           <div class="c">
+                            <div class="form-check">
+                                             <input class="form-check-input" type="radio" style="border-radius:20px"  value="1" name="q3"  >
+                                             <label> Yes </label>
+                                         </div>
+                                         <div class="form-check">
+                                             <input class="form-check-input" type="radio" style="border-radius:20px"  value="0" name="q3" >
+                                             <label>No</label>
+                                         </div>
+                                             
+                           <br>
+       
+       
+       
+                           
+                           <p> 4.  Are you suffering from fever ?</p>
+                           <div class="c">
+                             <div class="form-check">
+                                             <input class="form-check-input" type="radio" style="border-radius:20px"  value="1"  name="q4" >
+                                             <label> Yes </label>
+                                         </div>
+                                         <div class="form-check">
+                                             <input class="form-check-input" type="radio" style="border-radius:20px"  value="0" name="q4" >
+                                             <label>No</label>
+                                         </div>
+                           </div>
+                           <br>
+                           <p> 5. Are you suffering from Shortness of breath ?</p>
+                           <div class="c">
+                             <div class="form-check">
+                                             <input class="form-check-input" type="radio" style="border-radius:20px"  value="1"  name="q5" >
+                                             <label> Yes </label>
+                                         </div>
+                                         <div class="form-check">
+                                             <input class="form-check-input" type="radio" style="border-radius:20px"  value="0" name="q5" >
+                                             <label>No</label>
+                                         </div>
+                           </div>
+                     
+                       
+                     
+                     
+                     
+                           <div>
+                             <label><br /> 6. Are you experiencing any taste disorder or olfactory disorder ?</label>
+                             <div class="c">
+                              <div class="form-check">
+                                             <input class="form-check-input" type="radio" style="border-radius:20px"  value="1" name="q6"  >
+                                             <label> Yes </label>
+                                         </div>
+                                         <div class="form-check">
+                                             <input class="form-check-input" type="radio" style="border-radius:20px"  value="0" name="q6" >
+                                             <label>No</label>
+                                         </div>
+                            </div>
+                     
+                          <a href="survey.html"><button class="btn text-uppercase" type="submit">Get Results</button></a>
+                            <!--
+                             <input type="button" value="Click me" onclick="msg()">
+                             <input type="submit" value="Submit">  -->
+                           </div>
+                         </div>
+                       </form>
+                       
+                     </div>
+                 </div>
+             </div>
+          </div>
+     </main>
+    </section>
+           
+</html>

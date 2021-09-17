@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Covid Predictor</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="index.html">Covid Predictor</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/">Home</a></li>
+          <li><a class="nav-link scrollto " href="/positive">Prediction Results</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Covid Prediction<span> Results </span></h2>
+          <p class="animate__animated animate__fadeInUp" >This predictor tool uses advanced Machine Learning Tools and Data Science algorithms to predict your vulnerability to coronavirus.By the use of advanced Machine learning and data science algorithms, we have trained a Machine Learning model, which would predict your risk of being infected by coronavirus with precision.</p>
+
+
+
+        </div>
+      </div>
+
+    </div>
+ 
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="#FF3737">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="#EF2020">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#FF0000">
+      </g>
+    </svg>
+
+  </section>
+  <section id="about" class="about">
+    <div class="container">
+
+      <div class="section-title" data-aos="zoom-out">
+        <h2>Result</h2>
+        <p>Your Covid Prediction Results </p>
+        <h1> It's {%  print(prediction) %} %likely that you are positive</h1> 
+      </div>
+  
+  <section id="positive" class="positive">
+      <div class="container" data-aos="zoom-out">
+        <h1>POSITIVE</h1>
+        <h4>Alert </h4>
+        <h6>Thus corroborating the disease’s high transmissibility , highlighting the importance of social distancing and based on nationwide data we developed a model for predicting COVID-19 diagnosis by asking such basic questions and after seeing your answers to our questions we concluded that it’s high time for you to prioritize testing for COVID-19.</h6>
+      </div>
+
+  </section>
+  <section>
+    <div class="container" data-aos="zoom-out">
+      <h3>These additional tips will help you to minimize the spread of COVID-19 </h3>
+      <ol>
+        <li>Stay home if you are sick</li>
+        <li>Wash your hands regularly</li>
+        <li>Wear a mask when out in public</li>
+        <li>Practice social distancing (at least 6 feet)</li>
+        <li>Clean your environment</li>
+        <li>Monitor yourself for any symptoms of COVID-19 such as fever, cough or shortness of breath.</li>
+        <li>For Statewise Helpline Numbers Visit <a href="https://www.mygov.in/covid-19">Here</a></li>
+      </ol>
+    </div>
+  </section>
+  <section>
+    <div class="container" data-aos="zoom-out">
+      <h2>DISCLAIMER</h2>
+      <p>This tool is helps determining the possibility of being exposed to virus. Sometimes, it is possible that it may not show results to absolute accuracy. We do not guarantee in informing you about your chance of being exposed to the virus, we generate results on the basis of the data that has been fed to the machine. In any case, we do not suggest to not follow the covid protocols and guidelines and highly  recommend  that you wear a mask and sanitize regularly. </p>
+      <p>Public Interest  - GDSC GGV </p>
+    </div>
+  </section>
+  
+
+
+
+
+
+<footer id="footer">
+    <div class="container">
+      <h3>Covid Predictor</h3>
+      <p>Thank you For Visiting our Site, have a Great Day !</p>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Covid Predictor</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/selecao-bootstrap-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
