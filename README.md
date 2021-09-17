@@ -1,3 +1,3 @@
 # Covid Predictor
 
-* Click Here :- https:
+* Click Here :- https://covid-predictor-webapp.herokuapp.com/
