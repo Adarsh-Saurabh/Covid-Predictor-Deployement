@@ -1,3 +1,3 @@
 # Covid Predictor
 
-* Click Here :-
+* Click Here :- https:
