@@ -11,6 +11,10 @@ def index():
         return render_template('survey.html')
     return render_template("index.html")
 
+@app.route("/survey.html")
+def formpage():
+    return render_template("survey.html")
+
 @app.route("/survey" , methods=['GET', 'POST'])
 def survey():
     if request.method == 'POST':

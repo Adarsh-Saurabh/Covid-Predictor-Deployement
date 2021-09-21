@@ -8,14 +8,36 @@
   <title>Prediction Result</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
 
   <!-- CSS file -->
- <link rel= "stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'vendor/animate.css/animate.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'vendor/aos/aos.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'vendor/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'vendor/bootstrap-icons/bootstrap-icons.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'vendor/boxicons/css/boxicons.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'vendor/glightbox/css/glightbox.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'vendor/remixicon/remixicon.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'vendor/swiper/swiper-bundle.min.css') }}">
 
 
 
-   <!-- Js files -->
-   <script src="{{url_for('static', filename='js/main.js')}}"></script>
+  <!-- Js files -->
+  <script src="{{url_for('static', filename='js/main.js')}}"></script>
+
+
+  <!-- Some extra js files -->
+
+  <script src="{{url_for('static', filename='vendor/aos/aos.js')}}"></script>
+  <script src="{{url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static', filename='vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{url_for('static', filename='vendor/php-email-form/validate.js')}}"></script>
+  <script src="{{url_for('static', filename='vendor/swiper/swiper-bundle.min.js')}}"></script>
 
 </head>
 
@@ -49,7 +71,10 @@
       <div class="carousel-item active">
         <div class="carousel-container">
           <h2 class="animate__animated animate__fadeInDown">Covid Prediction<span> Results </span></h2>
-          <p class="animate__animated animate__fadeInUp" >This predictor tool uses advanced Machine Learning Tools and Data Science algorithms to predict your vulnerability to coronavirus.By the use of advanced Machine learning and data science algorithms, we have trained a Machine Learning model, which would predict your risk of being infected by coronavirus with precision.</p>
+          <p class="animate__animated animate__fadeInUp">This predictor tool uses advanced Machine Learning Tools and
+            Data Science algorithms to predict your vulnerability to coronavirus.By the use of advanced Machine learning
+            and data science algorithms, we have trained a Machine Learning model, which would predict your risk of
+            being infected by coronavirus with precision.</p>
 
 
 
@@ -82,84 +107,95 @@
       <div class="section-title" data-aos="zoom-out">
         <h2>Result</h2>
         <p>Your Covid Prediction Results </p>
-     <h1> It's {%  print(prediction) %} %likely that you are positive</h1>
+        <h1> It's {% print(prediction) %} %likely that you are positive</h1>
 
       </div>
-    
-  <section id="negative" class="negative">
-      <div class="container" data-aos="zoom-out">
-        <h1>NEGATIVE</h1>
-        <h4>Congratulations </h4>
-        <h6>
-          Thus corroborating the disease’s high transmissibility , highlighting the importance of social distancing and based on nationwide data we developed a model for predicting COVID-19 diagnosis by asking such basic questions and after seeing your answers to our questions we concluded that you are safe from infectious disease COVID-19.
-        </h6>
-      </div>
 
-  </section>
-  <section id="yu">
-    <div class="container" data-aos="zoom-out">
-      <h3>These Additional Tips will help you to Minimize the chances from Getting Infected</h3>
-      <br>
-      <ul>
-        <li>Everyone 2 years and older should wear masks in public.</li>
-        <li>Masks should be worn in addition to staying at least 6 feet apart, especially around people who don’t live with you.</li>
-        <li>If someone in your household is infected, people in the household should take precautions including wearing masks to avoid spread to others.</li>
-        <li>Wash your hands or use hand sanitizer before putting on your mask.</li>
-        <li>Wear your mask over your nose and mouth and secure it under your chin.</li>
-        <li>Fit the mask snugly against the sides of your face, slipping the loops over your ears or tying the strings behind your head.</li>
-        <li>If you have to continually adjust your mask, it doesn’t fit properly, and you might need to find a different mask type or brand.</li>
-      </ul>
-    </div>
-  </section>
-  <section>
-    <div class="container" data-aos="zoom-out">
-      <h2>DISCLAIMER</h2>
-      <p>This tool is helps determining the possibility of being exposed to virus. Sometimes, it is possible that it may not show results to absolute accuracy. We do not guarantee in informing you about your chance of being exposed to the virus, we generate results on the basis of the data that has been fed to the machine. In any case, we do not suggest to not follow the covid protocols and guidelines and highly  recommend  that you wear a mask and sanitize regularly. </p>
-      <p>Public Interest  - GDSC GGV </p>
-    </div>
-  </section>
+      <section id="negative" class="negative">
+        <div class="container" data-aos="zoom-out">
+          <h1>NEGATIVE</h1>
+          <h4>Congratulations </h4>
+          <h6>
+            Thus corroborating the disease’s high transmissibility , highlighting the importance of social distancing
+            and based on nationwide data we developed a model for predicting COVID-19 diagnosis by asking such basic
+            questions and after seeing your answers to our questions we concluded that you are safe from infectious
+            disease COVID-19.
+          </h6>
+        </div>
+
+      </section>
+      <section id="yu">
+        <div class="container" data-aos="zoom-out">
+          <h3>These Additional Tips will help you to Minimize the chances from Getting Infected</h3>
+          <br>
+          <ul>
+            <li>Everyone 2 years and older should wear masks in public.</li>
+            <li>Masks should be worn in addition to staying at least 6 feet apart, especially around people who don’t
+              live with you.</li>
+            <li>If someone in your household is infected, people in the household should take precautions including
+              wearing masks to avoid spread to others.</li>
+            <li>Wash your hands or use hand sanitizer before putting on your mask.</li>
+            <li>Wear your mask over your nose and mouth and secure it under your chin.</li>
+            <li>Fit the mask snugly against the sides of your face, slipping the loops over your ears or tying the
+              strings behind your head.</li>
+            <li>If you have to continually adjust your mask, it doesn’t fit properly, and you might need to find a
+              different mask type or brand.</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="container" data-aos="zoom-out">
+          <h2>DISCLAIMER</h2>
+          <p>This tool is helps determining the possibility of being exposed to virus. Sometimes, it is possible that it
+            may not show results to absolute accuracy. We do not guarantee in informing you about your chance of being
+            exposed to the virus, we generate results on the basis of the data that has been fed to the machine. In any
+            case, we do not suggest to not follow the covid protocols and guidelines and highly recommend that you wear
+            a mask and sanitize regularly. </p>
+          <p>Public Interest - GDSC GGV </p>
+        </div>
+      </section>
 
 
 
 
 
-<footer id="footer">
-    <div class="container" data-aos="zoom-out">
-      <h3>Covid Predictor</h3>
-      <p>Thank you For Visiting our Site, have a Great Day !</p>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>Selecao</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/selecao-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+      <footer id="footer">
+        <div class="container" data-aos="zoom-out">
+          <h3>Covid Predictor</h3>
+          <p>Thank you For Visiting our Site, have a Great Day !</p>
+          <div class="social-links">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+          <div class="copyright">
+            &copy; Copyright <strong><span>Selecao</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/selecao-bootstrap-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+          class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+      <!-- Template Main JS File -->
+      <script src="assets/js/main.js"></script>
 
 </body>
 
