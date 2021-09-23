@@ -1,4 +1,4 @@
 # Covid Predictor
-Used Linear Regression.
+Used Linear Regression
 
 * Click Here :- https://covid-predictor-webapp.herokuapp.com/
