@@ -3,7 +3,7 @@
 - We will ask you some questions and on those this answers this model will predict.
 - We trained our model on real world data collected using google form. 
 - Around 60 people helped us getting the data and this model is trained on those 60 datasets.
-- We used a <h5>supervised multi feature linear regression model</h5>.
+- We used a <strong>supervised multi feature linear regression model</strong>.
 - <h6>Your data is totally safe with us we dont store any of our user data at all</h6>.
 - Thank you for visiting our site!
 
